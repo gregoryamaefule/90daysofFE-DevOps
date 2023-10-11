@@ -1,8 +1,15 @@
 def main():
+    print(mergesort([1,9819,-1,-3]))
+    # print(mergesort([4,7,8,9,3,2,1]))
 
 
 def mergesort(arr):
-    if 
+    if len(arr) == 1:
+        return arr
+    else:
+        a,b = splt(arr)
+
+        return merge(mergesort(a),mergesort(b))
 
 
 def merge(arr1, arr2=[]):
@@ -29,7 +36,6 @@ def merge(arr1, arr2=[]):
 
     return resArr
 
-# print(merge([1,2,9,10,100], [4,5,6,17,20,24,26,27,28,34,35,36]))
 
 def splt(arr):
     n = len(arr)
@@ -40,8 +46,8 @@ def splt(arr):
 
     return a,b
 
-
-
+if __name__ == '__main__':
+    main()
 
 
 
