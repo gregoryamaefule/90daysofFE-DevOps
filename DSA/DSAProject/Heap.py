@@ -1,7 +1,7 @@
-class maxHeap():
+class maxHeap:
 
 
-    def __init___(self):
+    def __init___(self,):
         pass
 
     def insert(self):
